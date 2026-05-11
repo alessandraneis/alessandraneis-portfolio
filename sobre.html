@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+            /* Helvetica, Arial */
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #8A327B;
+            /* #31D6C7 #4EB6D7 */
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;
+            float: center;
+        }
+
+
+        .imagem_ale {
+            justify-content: left;
+            padding: 20px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 3;
+            grid-column-end: 12;
+            padding-left: 0;
+            padding-right: 30px;
+            text-align: justify;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #612357;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #D74DBF;
+        }
+
+        /* Classe específica para o menu de navegação */
+        .menu li {
+            float: left;
+        }
+
+        /* Remove o float dos itens da lista na seção principal */
+        .principal li {
+             float: none;
+             color: #D74DBF;
+             word-wrap: break-word;
+             overflow-wrap: break-word;
+             margin-left: 0;
+             padding-left: 0;
+        }
+        
+        a,
+        a:link {
+            text-decoration: none;
+            color: #612357;
+            padding: 8px 16px;
+            border: solid #612357 1px;
+        }
+
+        a:hover {
+            background-color: #D74DBF;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_ale {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio Pessoal</h1>
+        <h2 style="color: white; text-align: center;">Alessandra Neis</h2>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_ale">
+            <img src="imagem_ale.jpg" width=auto height="30%">
+            <div class="infos">
+                <p>Formação: Biotecnologista</p>
+                <p>Data de Nascimento: 16/07/1996</p>
+                <p>Naturalidade: Santa Cruz do Sul - RS</p>
+            </div>
+        </aside>
+
+       <section class="principal">
+    <h2>
+        Alessandra Neis
+    </h2>
+    <ul>
+        <li><p>Informações Pessoais</p></li>
+        <p style="color: black"> Possui 29 anos, atualmente mora em Curitiba, PR. </p>
+        <br>
+        <li><p>Apresentação</p></li>
+        <p style="color: black"> Bacharela em Biotecnologia pela Universidade Federal de Pelotas (UFPEL), possui mestrado e doutorado em Ciências com ênfase em Biotecnologia </p>
+        <br>
+        <li><p>Hobbies</p></li>
+        <p style="color: black"> Gosta de passear ao ar livre, pintar aquarelas e viajar </p>
+        <br>
+    </ul>
+</section>
+    </div>
+        <footer class="container">
+        <h4>Desenvolvido para fins educacionais</h4>
+    </footer>
+    </div>
+</body>
+
+</html>

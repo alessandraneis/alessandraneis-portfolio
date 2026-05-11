@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+            /* Helvetica, Arial */
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #8A327B;
+            /* #31D6C7 #4EB6D7 */
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;
+            float: center;
+        }
+
+
+        .principal {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            text-align: center;
+            margin: 10px 50px;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #612357;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #D74DBF;
+        }
+
+        /* Classe específica para o menu de navegação */
+        .menu li {
+            float: left;
+        }
+
+        /* Remove o float dos itens da lista na seção principal */
+        .principal li {
+             float: none;
+             color: #D74DBF;
+        }
+        
+        a,
+        a:link {
+            text-decoration: none;
+            color: #612357;
+            padding: 8px 16px;
+            border: solid #612357 1px;
+        }
+
+        a:hover {
+            background-color: #D74DBF;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_ale {
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Portfólio Pessoal</h1>
+        <h2 style="color: white; text-align: center;">Alessandra Neis</h2>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>  
+   
+    <section class="principal">
+
+    <ul>
+        <li><p> Formação educacional</p></li>
+        <p style="color: black;"> 2025-atual Tecnólogo em Ciência da Computação (UNINTER) <br>
+        2022-2024 Doutorado em Ciências com ênfase em Biotecnologia (UFPEL)<br>
+        2019-2021 Mestrado em Ciências com ênfase em Biotecnologia (UFPEL) <br>
+        2014-2018 Bacharelado em Biotecnologia (UFPEL) </p>
+        <br>
+        <li><p>Cursos</p></li>
+        <p style="color: black"> 2025 - Treinamento em análises de dados de GWAS (ICESP) <br> 2021 - Programação em shell script (LNCC) <br> 2020 - Ferramentas de bioinformática on-line aplicadas ao estudo de proteínas (UFPEL)<br> 2020 - Data Science R Basics (DataCamp) </p>
+        <br>
+        <li><p>Idiomas</p></li>
+        <p style="color: black"> Inglês: nível avançado <br> Espanhol: nível intermediário </p>
+    </ul>
+    <br><br>
+    </section>
+    </div>
+        <footer class="container">
+        <h4>Desenvolvido para fins educacionais</h4>
+    </footer>
+    </div>
+</body>
+
+</html> 
